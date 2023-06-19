@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="style/bootstrap-grid.css" type="text/css" rel="stylesheet">    
+    <link href="style/style1.css" type="text/css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap Practice 2</title>
+    
+    <script>
+   $(document).ready(function(){
+        $("#btn1").tooltip({
+            html: true,
+            animation: true,
+            delay:{"show": 100, "hide": 100},
+            title: "Hi <img src='images/img1.jpg'> <b>testing"
+            // trigger: "click",
+            // offset: 300
+        });
+
+        $("#sbtn").click(function(){
+            $("#btn1").tooltip('toggle'); 
+        });
+   });
+    </script>
+
+<style>
+    .tooltip-inner {
+        max-width: 500px !important;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 bg-warning">Column 1<br>               
+                <button class="btn btn-info" type="button">info</button><br>
+                <a class="btn btn-info" role="button" href="#">info link</a>
+                <button class="btn btn-danger" type="button">Danger
+                    <span class="badge badge-info">2</span>
+                </button><br> 
+                <a class="btn btn-danger" role="button" href="#">Danger link</a>
+                <button class="btn btn-outline-danger" type="button">Outline Danger
+                    <span class="badge badge-danger">2</span>
+                </button><br>              
+            </div>
+            <div class="col-md-2 bg-danger">Column 2<br>
+                <button class="btn btn-link" type="button">Link link</button><br>
+                <button class="btn btn-success disabled" type="button">success</button><br>
+                <button class="btn btn-warning" type="button">Warning</button><br>
+                <button class="btn btn-outline-warning" type="button">
+                    <span class="spinner-grow spinner-grow-sm"></span>
+                    Outline warning</button><br> 
+                <button class="btn btn-outline-warning disabled" type="button">
+                    <span class="spinner-border spinner-border-sm"></span>
+                    Outline warning</button><br>      
+            </div>
+            <div class="col-md-8 bg-info">Column 3<br>
+                <button class="btn btn-secondary active" type="button">secondary</button><br>
+                <button class="btn btn-primary " type="button">primary</button><br>
+                <button class="btn btn-outline-success" type="button">Outline success</button><br>   
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-primary" type="button">Button 1</button>
+                <button class="btn btn-primary" type="button">Button 2</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <div class="caret"></div>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Dropdown 1</a><br>
+                    <a class="dropdown-item" href="#">Dropdown 2</a>
+                </div>
+            
+            </div>
+
+        </div>
+        <!--
+        <div class="block1">
+            <div style="--i:1;"></div>
+            <div style="--i:2;"></div>
+            <div style="--i:3;"></div>
+            <div style="--i:4;"></div>
+            <div style="--i:5;"></div>
+            <div style="--i:6;"></div>
+        </div><br><br>
+        
+        <div class="block2">
+            <div style="--i:1;--score:85;--clr:#87CEFA;">
+                <h3>java script</h3>
+            </div>
+            <div style="--i:2;--score:50;--clr:#98FB98;">
+                <h3>CSS</h3>
+            </div>            
+        </div>
+        -->
+
+        <div class="block_typography">
+            <span class="text-primary">Primary Color</span><br>
+            <span class="text-danger">Danger Color</span><br>
+            <span class="text-muted">Muted Color</span><br>
+            <span class="header1 text-uppercase">Header 1</span><br>
+           <blockquote class="blockquote">he blockquote element is used to present content from another source:</blockquote>
+           <footer class="blockquote-footer">From WWF's website</footer>
+           <span>Press <kbd>Ctrl + C</kbd> for copy.</span><br><br>
+            <table class="table table-hover table-responsive-lg">
+                <tr class="table-primary ">
+                    <td>Row 1 - Column1</td>
+                    <td>Row 1 - Column2</td>
+                    <td>Row 1 - Column3</td>
+                    <td>Row 1 - Column4</td>
+                    <td>Row 1 - Column5</td>
+                    <td>Row 1 - Column6</td>
+                    <td>Row 1 - Column7</td>
+                    <td>Row 1 - Column8</td>
+                    <td>Row 1 - Column9</td>
+                    <td>Row 1 - Column10</td>
+                    </tr>
+                <tr class="table-secondary">
+                    <td>Row 2 - Column1</td>
+                    <td>Row 2 - Column2</td>
+                    <td>Row 2 - Column3</td>
+                    <td>Row 2 - Column4</td>
+                    <td>Row 2 - Column5</td>
+                    <td>Row 2 - Column6</td>
+                    <td>Row 2 - Column7</td>
+                    <td>Row 2 - Column8</td>
+                    <td>Row 2 - Column9</td>
+                    <td>Row 2 - Column10</td>
+                </tr>
+            </table>
+            <img src="images/img1.jpg" alt="" class="img-thumbnail mx-auto d-block"><br><br>
+            <div class="alert alert-warning">This is warning texts. This is warning texts. This is warning texts. This is warning texts. This is warning texts. This is warning texts. </div>
+            <div class="alert alert-info alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                This is warning texts. <a href="#" class="alert-link">Click here</a> This is warning texts. This is warning texts. This is warning texts. This is warning texts. This is warning texts. 
+            </div>
+            
+            
+            <div class="jumbotron jumbotron-fluid">
+                <h1>This is Jumbotron -Title</h1>
+                <span>This is Jumbotron - content. This is Jumbotron - content. This is Jumbotron - content.</span>
+                <span class="badge badge-pill badge-primary">Primary</span>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" style="width:80%">80%</div>
+                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" style="width:10%">10%</div>
+                <div class="progress-bar progress-bar-striped bg-primary progress-bar-animated" style="width:10%">10%</div>
+            </div><br><br>
+
+            <div class="spinner-border text-warning"></div><br>
+            <div class="spinner-grow text-info spinner-grow"></div>
+
+            <ul class="pagination justify-content-end">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+            </ul>
+
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">11</a></li>
+                <li class="breadcrumb-item"><a href="#">12</a></li>
+            </ul>
+
+            <div class="card" style="width:300px;">
+                <img class="card-img"  src="images/img2.png">
+                
+                <div class="card-body bg-warning"><h1>body title</h1>Content is here.  Content is here.  Content is here.</div>
+                <div class="card-footer"><a href="#" class="btn btn-warning"> see profile</a></div>
+            </div>
+
+            <div class="card-columns">
+                <div class="card-body bg-light text-center"> Content is here.  Content is here.  Content is here.</div>
+                <div class="card-body bg-info text-center"> Content is here.  Content is here.  Content is here.</div>
+            </div><br><br>
+
+            <div class="btn-group">
+                <button class="btn btn-info" type="button">Button 1</button>
+                <button class="btn btn-info" type="button">Button 2</button>
+                <div class="dropdown dropright">
+                    <button class="btn bg-info dropdown-toggle" data-toggle="dropdown" type="button">Menu 1</button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-header">Header 1</div>
+                        <a href="#" class="dropdown-item bg-light">Menu Item 1</a>
+                        <a href="#" class="dropdown-item bg-light">Menu Item 2</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-header">Header 2</div>
+                        <a href="#" class="dropdown-item bg-light">Menu Item 3</a>
+                    </div>
+                </div>
+            </div><br><br>
+
+            <a class="btn bg-info btn-danger text-left card" data-toggle="collapse" href="#accordion1">Accordion 1</a>
+            <div class="collapse show" id="accordion1">This is texts from accordion 1. This is texts from accordion 1.</div> 
+            <a class="btn bg-info btn-danger text-left card" data-toggle="collapse" href="#accordion2">Accordion 2</a>
+            <div class="collapse" id="accordion2">This is texts from accordion 2. This is texts from accordion 2.</div>
+            <a class="btn bg-info btn-danger text-left card" data-toggle="collapse" href="#accordion3">Accordion 3</a>
+            <div class="collapse" id="accordion3">This is texts from accordion 2. This is texts from accordion 2.</div>
+            
+           <br><br>
+            <div class="btn bg-warning btn-primary text-left card" data-toggle="collapse" data-target="#div2">Accordion 2</div>
+            <div class="collapse" id="div2">This is texts from accordion 2. This is texts from accordion 2.</div>
+            <div class="btn bg-warning btn-primary text-left card" data-toggle="collapse" data-target="#div3">Accordion 3</div>
+            <div class="collapse" id="div3">This is texts from accordion 2. This is texts from accordion 2.</div>
+            <br><br>
+
+            <ul class="nav justify-content-end nav-pills">
+              <li class="nav-item"><a href="#" class="nav-link">Nav 1</a></li>
+              <li class="nav-item"><a href="#" class="nav-link active">Nav 2</a></li>
+              <div class="dropdown dropright">
+                <li class="nav-item dropdown-toggle bg-warning" data-toggle="dropdown" data-target="dd1"><a href="#" class="nav-link">Nav 3</a></li> 
+                <div class="dropdown-menu" id="dd1">
+                    <a href="#" class="dropdown-item">link 1</a>
+                    <a href="#" class="dropdown-item">link 2</a>
+                </div>
+                </div>
+            </ul>
+            <br><br>
+
+            <div class="navbar navbar-expand-md bg-success navbar-dark">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsible"><span class="navbar-toggler-icon"></span></button>
+                
+                
+                <div class="collapse navbar-collapse" id="navCollapsible">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link text-white">item 1</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">item 1</a></li>
+                    </ul>
+                </div>
+                 
+
+                
+
+            </div><br>
+        
+            <div class="carousel slide text-center" id="mycarousel" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="images/img2.png"></div>
+                    <div class="carousel-item"><img src="images/img3.png"></div>
+                    <div class="carousel-item"><img src="images/img1.jpg"></div>
+                </div><br><br>
+
+                <ul class="carousel-indicators bg-dark">
+                    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                </ul>
+
+                <div class="carousel-control-prev bg-dark" data-slide="prev" data-target="#mycarousel">
+                    <span class="carousel-control-prev-icon"></span>
+                </div>
+
+                <div class="carousel-control-next bg-dark" data-slide="next" data-target="#mycarousel">
+                    <span class="carousel-control-next-icon"></span>
+                </div>                           
+
+
+
+            </div>
+        </div><br><br>
+
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="#" class="navbar-brand h1"><img src="images/img1.jpg" class="mr-0" width="100" height="30"></a>
+            
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="nav1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Help</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item">India</a>
+                                <a class="dropdown-item">APAC</a>
+                            </div>                    
+                    </li>
+                </ul>
+            </div>
+
+        </div><br>
+
+        <button class="bg-warning" data-placement="top" id="btn1">Hover Me</button>
+        <br><button class="bg-warning" data-placement="top" title="Tooltip comes here" id="btn2">Hover Me</button>
+        <br><br><br>
+        <button class="btn btn-outline-warning" type="button" id="sbtn">Toggle</button>
+        
+    </div>
+</body>
+</html>

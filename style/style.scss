@@ -1,0 +1,54 @@
+@import "variable";
+
+.container{
+    // border: 5px $border-color3 solid;
+}
+
+.row{
+     border: 5px $border-color4 solid;
+}
+
+.col{
+     border: 5px $border-color1 solid;
+}
+
+#sidebar {
+    background-color: $background1;
+}
+
+#content{
+    background-color: $background2;
+}
+
+#banner{
+    background-color: $background3;
+}
+
+#header{
+    background-color: $background4;
+}
+
+.color1 {
+    background-color: $background9;
+}
+
+.color2 {
+    background-color: $background8;
+}
+
+.color3 {
+    background-color: $background7;
+}
+
+.color4 {
+    background-color: $background6;
+}
+
+
+#footer{
+    background-color: $background1;
+}
+
+ul{
+    list-style-type: none;
+}

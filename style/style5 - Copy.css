@@ -1,0 +1,104 @@
+:root {
+  --color1: #800000;
+  --color2: #008000;
+  --color3: #808000;
+  --color4: #FFFF00;
+  --color5:#FFA500;
+  --color6:#FFFFFF;
+  --bgcolor1: #87CEFA;
+  --bgcolor2: #FFC0CB;
+  --bgcolor3: #00FFFF;
+  --bgcolor4: #E0E0E0;
+  --bgcolor5: #98FB98;
+  --bgcolor6: #007bff;
+  --bgcolor7: #000000;
+}
+
+/* common class start here */
+.container{
+  background-color: var(--bgcolor4);
+  /* height: 99vh; */
+  width:99vw;
+  position: relative;
+}
+
+.carousel-item {
+  position: relative;
+  
+}
+
+.carousel-caption{
+  background: var(--bgcolor5) !important;
+  height: 170px;
+  padding: 20px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;  
+}
+
+.carousel-item > .carousel-caption {
+  position: absolute;
+  top: 10px;
+  left: 20px !important;
+  width: 360px;
+  text-align: left !important;
+}
+
+.carousel-caption > button {
+  background: var(--color2) !important;
+  color: var(--color6) !important
+}
+
+.carousel-control-prev, .carousel-control-next{
+  position: absolute !important;
+  top: 220px !important;  
+}
+
+.CustomCard{
+  margin: 20px auto !important;
+}
+
+.customIcon {
+  font-size: 30px !important;
+  color: var(--bgcolor5) !important;
+}
+
+.carousel-control-prev {
+  z-index: 99999 !important;
+}
+
+.flex-prop-center{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.btn_custom{
+  padding: 0px !important;
+}
+
+.customStore {
+  background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0)), url(../images/img12.jpg) no-repeat 0 0;
+  height: 200px;
+  background-size: cover;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+

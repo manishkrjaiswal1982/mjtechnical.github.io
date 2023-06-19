@@ -1,0 +1,47 @@
+.row {
+  border: 5px #FFC300 solid;
+}
+
+.col {
+  border: 5px #333 solid;
+}
+
+#sidebar {
+  background-color: #DAF7A6;
+}
+
+#content {
+  background-color: #A6F7C3;
+}
+
+#banner {
+  background-color: #A6F7EB;
+}
+
+#header {
+  background-color: #A6DAF7;
+}
+
+.color1 {
+  background-color: #e98d40;
+}
+
+.color2 {
+  background-color: #cdb896;
+}
+
+.color3 {
+  background-color: #482b23;
+}
+
+.color4 {
+  background-color: #1d7aa6;
+}
+
+#footer {
+  background-color: #DAF7A6;
+}
+
+ul {
+  list-style-type: none;
+}/*# sourceMappingURL=style.css.map */
